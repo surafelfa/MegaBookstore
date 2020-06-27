@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../BooksInStock/mega-pullishng-and-distribution.jpeg);
+    background-size: cover;
+    font-family: sans-serif 'Segoe Print',serif,  "Century Gothic" , Tahoma, "Verdana Geneva";
+}
+.conrainer{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+.card{
+    padding: 60px 40px 50px 40px;
+    background: rgb(50,50,50);
+    border-radius: 10px;
+}
+#job,#date{
+    width: 200px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 6px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+#date{
+    width: 160px;
+}
+.sex,.DOB{
+    color: rgb(150, 141, 141);
+}
+#btn{
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: goldenrod;
+    color: maroon;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    margin-left: 60px;
+}
+
+#btn:hover,#btn:active{
+    background: maroon;
+    color: goldenrod;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+img{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 115px;
+    margin-top: -40px;
+}
