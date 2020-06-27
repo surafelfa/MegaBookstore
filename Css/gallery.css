@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif 'Segoe Print',serif,  "Century Gothic" , Tahoma, "Verdana Geneva";
+}
+html{
+    background: rgb(109, 37, 37);
+}
+.title{
+    color: rgb(109, 37, 37);
+}
+.title h1{
+    margin: 0px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.title p {
+    margin: 0px;
+    font-size: 16px;
+}
+body{
+    max-width: 88.9%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.content-wrapper{
+    margin-top: 0px;
+    border-top: 3px solid goldenrod;
+    border-bottom: 3px solid goldenrod;
+}
+.logo img{
+    width: 5.7%;
+    height: 34px;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.right-side{
+    display: flex;
+    margin-top: 65px;
+}
+.nav-wrapper > .right-side >div{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav-link-wrapper a:link,.nav-link-wrapper a:visited{
+    color: goldenrod;
+    text-decoration: none;
+    transition: 0.8s ease;
+    padding: 0px 8px;
+    box-sizing: border-box;
+}
+.nav-link-wrapper a:hover,.nav-link-wrapper a:active,.nav-link-wrapper a[href="gallery.html"]{
+    background-color: goldenrod;
+    color: maroon;
+}
+.mega-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mega-item-wrapper{
+    position: relative;
+}
+.mega-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.logo-wrapper img{
+    width: 20%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.img-text-wrapper .info{
+    
+    font-weight: 600;
+    color: transparent
+}
+.img-text-wrapper:hover .info{
+    font-weight: 600;
+    color: goldenrod;
+}
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%)
+}
+footer p{
+    margin: 13px;
+    text-align: center;
+    font-family: sans-serif 'Segoe Print',serif,  "Century Gothic" , Tahoma, "Verdana Geneva";
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(68, 48, 4)
+}
+
+@media(max-width: 768px){
+    .container,.nav-wrapper,.right-side{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .right-side{
+
+        margin-top: 0px
+    }
+    .mega-items-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .logo img{
+        position: absolute;
+        width: 40px;
+        height: 35px;
+        margin-top: 0px;
+        margin-left: -75px;
+    }
+    .logo-wrapper img{
+        width: 20%;
+    }
+}
